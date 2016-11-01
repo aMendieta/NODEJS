@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Stock Market App</title>
+</head>
+<body ng-app='stockMarketApp'>
+  <div ng-controller='MainCtrl as ctrl'>
+    <h3>List of Stock</h3>
+    <div ng-repeat='stock in ctrl.stocks'>
+      <div stock_widget></div>
+    </div>
+  </div>
+  <script src='http://code.angularjs.org/1.2.16/angular.js'></script>
+  <script src='main.js'></script>
+</body>
+</html>
