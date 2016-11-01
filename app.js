@@ -27,6 +27,8 @@ app.get('*', function(req, res) {
 
 
 // Escucha en el puerto 8080 y corre el server
-app.listen(9080, function() {
+//app.set('port', (process.env.PORT || 5000))
+//.listen(process.env.PORT || 5000)
+app.listen(process.env.PORT || 5000, function() {
     console.log('App listening on port 9080');
 });
